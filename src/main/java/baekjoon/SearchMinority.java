@@ -18,10 +18,10 @@ public class SearchMinority {
 
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int N = Integer.parseInt(br.readLine());
+
         StringTokenizer st = new StringTokenizer(br.readLine());
-
-        int N = Integer.parseInt(st.nextToken());
-
 
         int count =0;
 
@@ -32,8 +32,5 @@ public class SearchMinority {
             }
         }
         System.out.println(count);
-
-
-
     }
 }
