@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class NandM1 {
     public static int N, M;
     public static int[] arr;
-    public static boolean[] visit;
+//    public static boolean[] visit;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class NandM1 {
         M = sc.nextInt();
 
         arr = new int[M];
-        visit = new boolean[N + 1];
+//        visit = new boolean[N + 1];
 
         // 0번 인덱스부터 채우기 시작하고, 숫자는 1부터 선택 가능하도록 넘겨줌
         dfs(1, 0);
@@ -33,15 +33,8 @@ public class NandM1 {
         // 2. [반복문] i를 1이 아닌 'start'부터 시작하게 바꿉니다.
         // 이렇게 하면 이전에 고른 숫자보다 작은 숫자는 쳐다보지도 않게 됩니다.
         for (int i = start; i <= N; i++) {
-            if (!visit[i]) {
-                visit[i] = true;
-                arr[depth] = i;
-
-                // 다음 칸을 채울 때는 현재 고른 숫자(i)보다 1 큰 숫자부터 시작하게 합니다.
-                dfs(i + 1, depth + 1);
-
-                visit[i] = false;
-            }
+           arr[depth] = i;
+           dfs(i+1,depth+1);
         }
     }
 }
