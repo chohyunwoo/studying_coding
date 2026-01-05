@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+// Math.max / Math.min 언제 사용? <- 입력 순서가 보장되지 않을때 + 구간 문제인데 실수 방지하고 싶을때 사용
 public class Example5 {
     public static void main(String[] args) throws Exception {
 
