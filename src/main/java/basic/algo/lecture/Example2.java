@@ -1,4 +1,4 @@
-package baekjoon;
+package basic.algo.lecture;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
