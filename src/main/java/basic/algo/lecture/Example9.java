@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// 카드 역배치 10804
 public class Example9 {
     static int[] Number = new int[21];
 
