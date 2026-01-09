@@ -16,12 +16,12 @@ public class Roof {
 
         Stack<int[]> stack = new Stack<>();
 
-        int count = 0;
+        long count = 0;
 
         for (int i = 1; i <= N; i++) {
             int height = Integer.parseInt(br.readLine());
 
-            // 현재 건물 보다 낮거나 같으면 제거
+            // 현재 건물이 더 높거나 같으면, 스택의 top 건물은 앞으로 어떤 건물도 볼 수 없으므로 제거
             while (!stack.isEmpty() && stack.peek()[1] <= height) {
                 stack.pop();
             }
